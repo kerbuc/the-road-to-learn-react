@@ -10,6 +10,8 @@ ReactDOM.render(
 );
 
 if (module.hot) {
+  const d = new Date();
+  console.log("[MHR] " + d.toLocaleTimeString());
   module.hot.accept();
 }
 
